@@ -61,6 +61,9 @@ public class EmployeeService {
     public List<Employee> findACharacterByHisRole(String role) {
         return employeeRepository.findAllByRole(role);
     }
+    
+    
+    
 
     public List<NameDTO> returnCharacterByHisNameDTO(String role) {
         List<Employee> allEmployeesEntity = employeeRepository.findAllByRole(role);
